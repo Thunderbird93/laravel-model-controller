@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get(uri: '/', action: [PageController::class, 'index'])->name(name:'home');
 
 Route::get(uri: '/chi-siamo', action: [PageController::class, 'about'])->name(name: 'about');
+
+Route::get('/elenco', [PageController::class, 'elenco'])->name('elenco');
